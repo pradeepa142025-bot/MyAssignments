@@ -92,8 +92,9 @@ public class ActionsSnapdeal{
 		 File target=new File("./Actions/TrainingShoescreenshot.png");
 		 FileUtils.copyFile(screenshotofTheDisplayedProduct, target);
 		 //Close the current window.
-		 //driver.close();
+		 driver.close();
 		 //Close the main window.
-		 //driver.quit();
+		 driver.quit();
 	}
 }
+
