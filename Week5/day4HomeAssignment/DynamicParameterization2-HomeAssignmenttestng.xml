@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url" value="http://leaftaps.com/opentaps/control/main"></parameter>
+  <test thread-count="5" name="CreateLeadTest" verbose="2">
+  <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="username" value="demosalesmanager"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4HomeAssignment.CreateLead"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="EditLeadTest" verbose="2">
+  <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="username" value="demosalesmanager"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4HomeAssignment.EditLead"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="MergeLeadTest" verbose="2">
+  <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="username" value="demosalesmanager"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4HomeAssignment.MergeLead"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="DuplicateLeadTest" verbose="2">
+  <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="username" value="demosalesmanager"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4HomeAssignment.DuplicateLead"/>
+    </classes>
+  </test> <!-- Test -->
+
+ <!--  <test thread-count="5" name="DeleteLeadTest" verbose="2">
+  <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="username" value="demosalesmanager"></parameter>
+  <parameter name="password" value="crmsfa"></parameter>
+    <classes>
+      <class name="week5.day4HomeAssignment.DeleteLead"/>
+    </classes>
+  </test> 
+  -->
+</suite> <!-- Suite -->
+
